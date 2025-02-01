@@ -23,6 +23,11 @@
         .text-common {
             color: #179800;
         }
+
+        .hover-effect:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
     </style>
 </head>
 
@@ -31,22 +36,22 @@
         <div class="max-w-screen-2xl mx-auto pt-4 px-4 md:px-10 lg:px-20">
             <nav class="flex justify-between items-center border-b border-[#179800] md:border-hidden mb-12 md:mb-16">
                 <div class="pb-2">
-                    <img class="hidden md:inline" src="assets\logo-header.png" alt="logo">
-                    <img class="md:hidden" src="assets\logo-small.png" alt="logo">
+                    <a href=""><img class="hidden md:inline" src="assets\logo-header.png" alt="logo"></a>
+                    <a href=""><img class="md:hidden" src="assets\logo-small.png" alt="logo"></a>
                 </div>
                 <div class="flex items-center">
                     <div class="hidden lg:inline mr-24">
                         <ul class="flex gap-5 text-xl">
-                            <li><a href="/">Product</a></li>
-                            <li><a href="/">Services</a></li>
-                            <li><a href="/">Contact Us</a></li>
+                            <li><a href="">Product</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="hidden lg:flex gap-3 items-center text-xl">
-                        <div><i class="fa-solid fa-magnifying-glass text-2xl"></i></div>
-                        <div><i class="fa-solid fa-cart-shopping text-2xl"></i></div>
-                        <button class="border-2 border-[#179800] px-6 py-1 rounded-lg">Login</button>
-                        <button class="bg-[#179800] px-6 py-1.5 rounded-lg text-white">Register</button>
+                    <div class="hidden lg:flex gap-3 items-center text-xl cursor-pointer">
+                        <div><i class="fa-solid fa-magnifying-glass text-2xl hover-effect"></i></div>
+                        <div><i class="fa-solid fa-cart-shopping text-2xl hover-effect"></i></div>
+                        <button class="border-2 border-[#179800] px-6 py-1 rounded-lg hover-effect">Login</button>
+                        <button class="bg-[#179800] px-6 py-1.5 rounded-lg text-white hover-effect">Register</button>
                     </div>
                     <div class="lg:hidden"><i class="fa-solid fa-bars text-3xl text-common"></i></div>
                 </div>
@@ -69,7 +74,7 @@
                 <h1 class="text-2xl md:text-3xl lg:text-4xl text-common font-semibold mb-8 md:mb-12">Services</h1>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="card bg-[#EFEBE3]">
+                    <div class="card bg-[#EFEBE3] hover:shadow-xl">
                         <figure class="px-10 pt-10">
                             <img src="assets\service.png" alt="services" />
                         </figure>
@@ -80,7 +85,7 @@
                         </div>
                     </div>
 
-                    <div class="card bg-[#EFEBE3]">
+                    <div class="card bg-[#EFEBE3] hover:shadow-xl">
                         <figure class="px-10 pt-10">
                             <img src="assets\delivery.png" alt="fast delivery" />
                         </figure>
@@ -91,7 +96,7 @@
                         </div>
                     </div>
 
-                    <div class="card bg-[#EFEBE3]">
+                    <div class="card bg-[#EFEBE3] hover:shadow-xl">
                         <figure class="px-10 pt-10">
                             <img src="assets\healthy.png" alt="services" />
                         </figure>
@@ -313,7 +318,7 @@
                 </p>
                 <div><input type="text" placeholder="type your question"
                     class="input text-center md:text-start input-bordered input-success w-full max-w-xs mb-4" />
-                <button class="bg-[#179800] px-6 py-2.5 rounded-lg text-white text-xl">Submit</button></div>
+                <button class="bg-[#179800] px-6 py-2.5 rounded-lg text-white text-xl hover:bg-gray-500">Submit</button></div>
             </div>
         </section>
 
@@ -333,7 +338,7 @@
                             class="h-10 w-[90%] md:w-2/3 rounded-xl text-center md:text-start md:pl-10">
                     </div>
                     <div class="md:mb-10 card-actions justify-center  md:justify-start">
-                        <button class="bg-[#179800] px-6 py-1.5 rounded-lg text-white">Subscribe</button>
+                        <button class="bg-[#179800] px-6 py-1.5 rounded-lg text-white hover-effect">Subscribe</button>
                     </div>
                 </div>
             </div>
@@ -345,7 +350,7 @@
             <div class="grid gap-8 lg:grid-cols-3 lg:items-end">
 
                 <div>
-                    <div><img src=" assets\logo-footer.png" alt="footer logo"></div>
+                    <div><a href=""><img src=" assets\logo-footer.png" alt="footer logo"></div></a>
                     <p class="lg:w-3/4 mt-4">
                         Discover a world of treats, toys, and essentials handpicked for your furry friends
                     </p>
@@ -353,19 +358,19 @@
 
                 <div>
                     <ul class="grid lg:justify-center gap-2 lg:gap-8">
-                        <li><a href="/">Product</a></li>
-                        <li><a href="/">Services</a></li>
-                        <li><a href="/">Contact Us</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact Us</a></li>
                     </ul>
                 </div>
 
                 <div class="grid lg:justify-end gap-2">
                     <h6>Follow Us</h6>
-                    <div class="flex gap-4">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-youtube"></i>
+                    <div class="flex gap-4 cursor-pointer">
+                        <i class="fa-brands fa-facebook hover-effect"></i>
+                        <i class="fa-brands fa-instagram hover-effect"></i>
+                        <i class="fa-brands fa-linkedin hover-effect"></i>
+                        <i class="fa-brands fa-youtube hover-effect"></i>
                     </div>
                 </div>
             </div>
